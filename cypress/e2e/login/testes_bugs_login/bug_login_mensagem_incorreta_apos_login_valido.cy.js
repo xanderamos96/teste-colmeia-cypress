@@ -20,6 +20,9 @@ describe('Bug no fluxo de autenticação', () => {
     cy.contains('Seu login está incorreto, quer continuar?')
       .should('exist')
 
+    cy.log('Teste do fluxo de autenticação concluído com sucesso.')
+    cy.log('Podemos ver que o sistema apresenta uma mensagem de login incorreto mesmo utilizando credenciais válidas, indicando um bug no processo de autenticação.')
+
   })
 
 })

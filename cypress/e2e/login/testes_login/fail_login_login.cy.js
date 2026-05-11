@@ -19,6 +19,9 @@ describe('Login inválido', () => {
     cy.url()
       .should('eq', 'https://teste-colmeia-qa.colmeia-corp.com/')
 
+    cy.log('Teste de login inválido concluído com sucesso.')
+    cy.log('Podemos ver que o sistema impede o login com credenciais incorretas, exibindo a mensagem de erro apropriada e mantendo o usuário na página de login.')
+
   })
 
 })
